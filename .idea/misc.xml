@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/drawable/button_background.xml" value="0.2265" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/drawable/edit_text_background.xml" value="0.2265" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.15428380187416332" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout-w936dp/activity_login.xml" value="0.18886612021857924" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/activity_login.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/activity_login2.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/currency_details_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/currency_list_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/fragment_register.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/login_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/portfolio_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/profile_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/recyclerview_item.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/recyclerview_item_currencies.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/recyclerview_item_following.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/recyclerview_item_portfolio.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/layout/register_fragment.xml" value="0.2504528985507246" />
+        <entry key="..\:/Users/araim/AndroidStudioProjects/CryptoTracker/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

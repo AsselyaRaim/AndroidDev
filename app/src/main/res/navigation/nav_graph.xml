@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/currency_list"
+        android:name="com.example.cryptotracker.fragments.currencies.list.CurrencyListFragment"
+        android:label="Currencies"
+        tools:layout="@layout/currency_list_fragment" >
+        <action
+            android:id="@+id/action_currency_list_to_currencyDetailsFragment"
+            app:destination="@id/currencyDetailsFragment" />
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/portfolio"
+        android:name="com.example.cryptotracker.fragments.portfolio.PortfolioFragment"
+        android:label="Portfolio"
+        tools:layout="@layout/portfolio_fragment" >
+        <action
+            android:id="@+id/action_portfolio_to_currencyDetailsFragment"
+            app:destination="@id/currencyDetailsFragment" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.cryptotracker.fragments.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+        android:id="@+id/currencyDetailsFragment"
+        android:name="com.example.cryptotracker.fragments.currencies.details.CurrencyDetailsFragment"
+        android:label="Currency details"
+        tools:layout="@layout/currency_details_fragment" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="userId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.cryptotracker.fragments.register.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_portfolio"
+            app:destination="@id/portfolio" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.cryptotracker.fragments.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_portfolio"
+            app:destination="@id/portfolio" />
+    </fragment>
+</navigation>

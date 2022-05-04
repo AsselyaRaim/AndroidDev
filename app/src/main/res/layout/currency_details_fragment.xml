@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".fragments.currencies.details.CurrencyDetailsFragment">
+
+        <ImageView
+            android:id="@+id/cryptoLogo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/portfolio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/cryptoSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/cambay"
+            android:textColor="#A19F9F"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="@id/cryptoName"
+            app:layout_constraintStart_toEndOf="@+id/cryptoName"
+            app:layout_constraintTop_toTopOf="@id/cryptoName" />
+
+        <TextView
+            android:id="@+id/cryptoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay_bold"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/cryptoLogo"
+            app:layout_constraintStart_toEndOf="@+id/cryptoLogo"
+            app:layout_constraintTop_toTopOf="@id/cryptoLogo" />
+
+        <TextView
+            android:id="@+id/cryptoStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cambay_bold"
+            android:text="Statistical data:"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintStart_toEndOf="@+id/cryptoLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoLogo" />
+
+        <TextView
+            android:id="@+id/cryptoRank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Rank: "
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoStats" />
+
+        <TextView
+            android:id="@+id/cryptoPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Price: $"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoRank" />
+
+        <TextView
+            android:id="@+id/cryptoSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Supply (circulating / max):\n"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoPrice" />
+
+        <TextView
+            android:id="@+id/cryptoVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Volume: $"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoSupply" />
+
+        <TextView
+            android:id="@+id/cryptoMarketCap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Market Cap: $"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoVolume" />
+
+        <TextView
+            android:id="@+id/cryptoPercent24h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Percent change (24h): "
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoMarketCap" />
+
+        <TextView
+            android:id="@+id/cryptoPercent7d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text="Percent change (7d): "
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoPercent24h" />
+
+        <TextView
+            android:id="@+id/cryptoDescHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cambay_bold"
+            android:text="Description:"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoPercent7d" />
+
+        <TextView
+            android:id="@+id/cryptoDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambay"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoDescHeader" />
+
+        <Button
+            android:id="@+id/BuyButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/theme_color"
+            android:fontFamily="@font/cambay_bold"
+            android:padding="10dp"
+            android:text="Follow"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cryptoDesc" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
