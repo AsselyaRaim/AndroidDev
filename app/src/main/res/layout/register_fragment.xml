@@ -76,6 +76,7 @@
         android:padding="10dp"
         android:hint="Enter your password"
         android:textColor="#878585"
+        android:inputType="textPassword"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

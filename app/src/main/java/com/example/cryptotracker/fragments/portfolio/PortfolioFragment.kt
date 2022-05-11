@@ -34,7 +34,7 @@ import retrofit2.Response
 
 class PortfolioFragment : Fragment(), PortfolioAdapter.OnItemClickListener, PortfolioAdapter.onButtonClickListener{
 
-    private var followingArray: MutableList<Currency> = mutableListOf()
+    lateinit var followingArray: MutableList<Currency>
     private val args: PortfolioFragmentArgs by navArgs()
     private lateinit var currentUser: User
 
@@ -52,9 +52,9 @@ class PortfolioFragment : Fragment(), PortfolioAdapter.OnItemClickListener, Port
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        followingArray = mutableListOf()
         val apiService = ApiService()
         val view: View = inflater.inflate(R.layout.portfolio_fragment, container, false)
-//        Log.d("ID of logged user: ", args.id.toString())
         val fragmentContext = context
         if (fragmentContext != null) {
             db = Room.databaseBuilder(fragmentContext, userDatabase::class.java, "user_db")
@@ -83,7 +83,7 @@ class PortfolioFragment : Fragment(), PortfolioAdapter.OnItemClickListener, Port
                         for (i in 0..(favoritesSize - 2)) {
                             parameterList += currentUser.favorites!![i].toString() + ","
                         }
-                        parameterList += currentUser.favorites!!.last().toString()
+                        parameterList += currentUser.favorites!![favoritesSize - 1].toString()
                     } else if (favoritesSize == 1) {
                         parameterList = currentUser.favorites!![0].toString()
                     }
@@ -102,8 +102,6 @@ class PortfolioFragment : Fragment(), PortfolioAdapter.OnItemClickListener, Port
                                 val rawJson = JSONObject(rawString)
                                 val rawDataNode = rawJson.get("data").toString()
                                 val gson = Gson()
-//                        val currencyMapType: Type =
-//                            object : TypeToken<Map<Int, Currency>>() {}.type
                                 val type = object : TypeToken<Map<String, Currency>>() {}.type
                                 val followingMap =
                                     gson.fromJson<Map<String, Currency>>(rawDataNode, type)

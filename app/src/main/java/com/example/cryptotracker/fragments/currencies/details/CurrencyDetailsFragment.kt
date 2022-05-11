@@ -11,7 +11,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.NavArgument
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.room.Room
 import com.bumptech.glide.Glide
@@ -58,6 +60,9 @@ class CurrencyDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        findNavController().graph.findNode(R.id.portfolio)
+            ?.addArgument("id", NavArgument.Builder()
+                .setDefaultValue(args.userId).build())
         val apiService = ApiService()
         val currencyId = args.id
         getCurrencyDetails(view, apiService, currencyId)
