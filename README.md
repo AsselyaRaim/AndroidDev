@@ -9,23 +9,23 @@ This app uses Conimarket API as a source of currencies data and room database to
 ### Elements of the app
 
 - [x] Login page:
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/1.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/1.png)
 
 - [x] Registration page:
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/2.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/2.png)
 
 - [x] Currency List:
 External API data from coinmarket.com
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/3.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/3.png)
 
 - [x] Currency details: 
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/4.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/4.png)
 
 - [x] Ability to follow currency (add to following list): 
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/5.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/5.png)
 
 - [x] Following currencies list: 
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/6.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/6.png)
 
 - [x] Profile info: 
-![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/7.jpg)
+![This is an image](https://github.com/AsselyaRaim/AndroidDev/edit/main/Screenshots/7.png)
